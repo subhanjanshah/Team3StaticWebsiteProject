@@ -1,1 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Need Help - CGG Cafe</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@300;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Specific styles for the static booking form */
+        .static-booking-container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .form-group { margin-bottom: 15px; }
+        .form-label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-input, .form-select { 
+            width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; 
+            box-sizing: border-box; 
+        }
+        .submit-btn {
+            width: 100%; padding: 12px; background: #472717; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;
+        }
+        .submit-btn:hover { background: #5d3a28; }
+    </style>
+</head>
+<body>
 
+    <nav>
+        <div class="nav-side">
+            <a href="index.html" class="nav-item"><i class="fas fa-home"></i> Home</a>
+            <a href="menu.html" class="nav-item"><i class="fas fa-utensils"></i> Menu</a>
+            <a href="help.html" class="nav-item"><i class="fas fa-calendar-alt"></i> Book a Table</a>
+        </div>
+        
+        <div class="nav-logo">
+            <img src="logo.png" alt="CGG CAFE">
+        </div>
+        
+        <div class="nav-side nav-right">
+            <a href="https://maps.google.com" target="_blank" class="nav-item"><i class="fas fa-map-marked-alt"></i> Find Us</a>
+            <a href="help.html" class="nav-item" style="color: #d7ccc8;"><i class="fas fa-info-circle"></i> Need Help</a>
+        </div>
+    </nav>
+
+    <div class="parallax-section" style="height: 50vh;">
+        <div class="content-layer">
+            <h1>Contact & Booking</h1>
+            <p class="cafe-text">Reserve your spot or say hello</p>
+        </div>
+    </div>
+
+    <div class="static-booking-container">
+        <h2 style="text-align: center; margin-bottom: 20px;">Book a Table</h2>
+        
+        <div class="form-group">
+            <label class="form-label">Date</label>
+            <input type="date" class="form-input">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Time</label>
+            <input type="time" class="form-input">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Duration</label>
+            <select class="form-select">
+                <option value="1">1 Hour</option>
+                <option value="2">2 Hours</option>
+                <option value="3">3 Hours</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Table Preference</label>
+            <select class="form-select">
+                <option value="Any">Any Table</option>
+                <option value="Window">Window Seat</option>
+                <option value="Quiet">Quiet Corner</option>
+            </select>
+        </div>
+
+        <button class="submit-btn">Request Booking</button>
+    </div>
+
+    <div class="contact-container">
+        <h2 style="text-align: center;">Get in Touch</h2>
+        <p style="font-family: 'Lora', serif; font-size: 18px; color: #666; margin-top: 10px; text-align: center;">Have questions or feedback? Reach out to us directly.</p>
+        
+        <div class="contact-grid">
+            <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <p>+358 12 345 6789</p>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>info@cggcafe.com</p>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-clock"></i>
+                <h3>Hours</h3>
+                <p>Mon-Fri: 8:00am - 7:30pm<br>Sat-Sun: 9:00am - 5:00pm</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column footer-brand-center">
+                <img src="logo.png" alt="CGG CAFE" class="footer-big-logo">
+                <h3>CGG CAFE</h3>
+            </div>
+            <div class="footer-column" style="text-align: center;">
+                <h3>Follow Us</h3>
+                <ul style="list-style: none;">
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://tiktok.com" target="_blank">TikTok</a></li>
+                </ul>
+            </div>
+            <div class="footer-column" style="text-align: right;">
+                <h3>Contact Us</h3>
+                <p>Address: 13100 Hämeenlinna, Finland</p>
+                <p>Email: info@cggcafe.com</p>
+                <p>Phone: +358 12 345 6789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <a href="#">Terms & Conditions</a>
+            </div>
+            <div class="footer-bottom-right">
+                <a href="#">© 2026 CGG Cafe</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
